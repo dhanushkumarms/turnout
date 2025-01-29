@@ -1,89 +1,76 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnout - Online Voting</title>
+    <title>Turnout - Online Voting Application</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="img/turnout.png" alt="Turnout Logo" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="tab-link active" onclick="navigate(0)">About</a></li>
-                <li><a href="#" class="tab-link" onclick="navigate(1)">Features</a></li>
-                <li><a href="#" class="tab-link" onclick="navigate(2)">Contact Us</a></li>
-            </ul>
-        </nav>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Voting</a>
+        <a href="#">Results</a>
         <button class="logout-btn">Logout</button>
-    </header>
-
-    <div class="carousel-container">
-        <div class="carousel-arrow prev" onclick="moveCarousel(-1)">
-            <span class="arrow-icon">&#10094;</span>
-        </div><div class="carousel-frame" id="about">
-    <div class="frame-content">
-        <h2 class="frame-title">About Turnout</h2>
-        <img src="img/image1.jpeg" alt="About Turnout" class="frame-image left">
-        <p>Turnout is a cutting-edge online voting platform designed to enhance accessibility, security, and transparency in the voting process. With user-friendly features, it allows citizens to participate in elections from anywhere, at any time, without compromising their privacy. By leveraging state-of-the-art encryption technologies, Turnout ensures that every vote is secure and confidential. The platform is built with a focus on integrity, offering real-time results and an auditable trail for complete transparency. Turnout is mobile-friendly, making it easy for users to cast their votes on the go, ensuring greater participation and inclusivity.</p>
-        <button class="play-button" onclick="window.location.href='https://youtu.be/zPTnW_7b26U?si=29JOBSIS3IXzo9QM'">▶ Play Video</button>
-
-    </div>
     </div>
 
-    <div class="carousel-frame" id="features">
-        <div class="frame-content">
-            <h2 class="frame-title">Features</h2>
-            <img src="img/image2.jpg" alt="Features" class="frame-image right">
+    <div class="container">
+        <h1>Welcome to Turnout</h1>
+        <p>Make your voice heard! Participate in the latest online voting session.</p>
+
+        <div class="card">
+            <h2>Vote for the Next Leader</h2>
+            <form id="voteForm">
+                <label for="candidate">Select Your Candidate:</label>
+                <select id="candidate" name="candidate">
+                    <option value="candidate1">Candidate 1</option>
+                    <option value="candidate2">Candidate 2</option>
+                    <option value="candidate3">Candidate 3</option>
+                </select>
+                <button type="submit">Submit Vote</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>How It Works</h2>
+            <p>Our platform allows you to securely cast your vote for the next leader. Follow the instructions below to participate:</p>
             <ul>
-                <li></li>
-                <li># Secure Voting System</li>
-                <li># User-friendly Interface</li>
-                <li># Real-time Results</li>
-                <li># End-to-end Encryption</li>
-                <li># Audit Trail for Transparency</li>
-                <li># Mobile Friendly</li>
-                <li># Voter Real-time Authentication</li>
+                <li>Log in to your account</li>
+                <li>Review the candidates</li>
+                <li>Choose your preferred candidate</li>
+                <li>Submit your vote and wait for the results</li>
             </ul>
         </div>
-    </div>
 
-
-        <div class="carousel-frame" id="contact">
-            <div class="frame-content">
-                <h2 class="frame-title">Contact Us</h2>
-                <form id="feedback-form">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <textarea id="message" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-                <div class="social-media">
-                    <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+        <div class="card">
+            <h2>Latest Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Candidate 1</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Candidate 2</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>Candidate 3</td>
+                        <td>120</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <div class="carousel-arrow next" onclick="moveCarousel(1)">
-            <span class="arrow-icon">&#10095;</span>
-        </div>
-    </div>
-
-    <div class="carousel-indicators">
-        <span class="dot active" onclick="navigate(0)"></span>
-        <span class="dot" onclick="navigate(1)"></span>
-        <span class="dot" onclick="navigate(2)"></span>
     </div>
 
     <footer>
-        <p>&copy; 2024 Turnout. All rights reserved.</p>
+        <p>&copy; 2025 Turnout Voting Application. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
