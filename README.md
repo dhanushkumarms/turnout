@@ -48,4 +48,4 @@ Open index.html directly in your browser
 ```
 ## 🌍 Live Demo  
 
-🔗 [Click here to try Turnout Online Voting Website](https://your-username.github.io/turnout/)  
+🔗 [Try Turnout Online Voting Website](https://dhanushkumarms.github.io/turnout/)
