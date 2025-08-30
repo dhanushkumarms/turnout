@@ -1,6 +1,12 @@
-# 🗳️ Turnout – Online Voting Application  
+# 🗳️ Turnout – Online Voting Application 
 
-![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge&logo=github&logoColor=white)  
+
+<p align="center">
+  <img src="img/turnout.jpg" alt="Turnout Logo" width="800"/>
+</p>
+
+![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge&logo=github&logoColor=white) 
+---
 ![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)  
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=yellow)  
